@@ -1,18 +1,14 @@
 export function calculateZodiacSign(day, month) {
     // Переменная, которая хранит название знака зодиака
     let zodiacSign = '';
-    // Массив названий месяцев
-    let months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль'
-        , 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
     // Массив названий знаков зодиаков
     let zodiacSigns = ['Козерог', 'Водолей', 'Рыбы', 'Овен',
         'Телец', 'Близнецы', 'Рак', 'Лев', 'Дева', 'Весы', 'Скорпион',
         'Стрелец'];
-    // Если day от 1-31 и month есть в массиве months то вычисляем знак зодиака
-    if (day >= 1 && day <= 31 && months.includes(month)) {
+
         switch (month) {
-            case 'Январь': {
-                if (day < 20) {
+            case '1': {
+                if (day < 21) {
                     zodiacSign = zodiacSigns[0];
                 } else {
                     zodiacSign = zodiacSigns[1];
@@ -20,7 +16,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case 'Февраль': {
+            case '2': {
                 if (day < 19) {
                     zodiacSign = zodiacSigns[1];
                 } else {
@@ -29,7 +25,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case 'Март': {
+            case '3': {
                 if (day < 21) {
                     zodiacSign = zodiacSigns[2];
                 } else {
@@ -38,7 +34,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case 'Апрель': {
+            case '4': {
                 if (day < 20) {
                     zodiacSign = zodiacSigns[3];
                 } else {
@@ -47,7 +43,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case 'Май': {
+            case '5': {
                 if (day < 21) {
                     zodiacSign = zodiacSigns[4];
                 } else {
@@ -56,7 +52,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case 'Июнь': {
+            case '6': {
                 if (day < 21) {
                     zodiacSign = zodiacSigns[5];
                 } else {
@@ -65,7 +61,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case 'Июль': {
+            case '7': {
                 if (day < 23) {
                     zodiacSign = zodiacSigns[6];
                 } else {
@@ -74,7 +70,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case 'Август': {
+            case '8': {
                 if (day < 23) {
                     zodiacSign = zodiacSigns[7];
                 } else {
@@ -83,7 +79,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case 'Сентябрь': {
+            case '9': {
                 if (day < 23) {
                     zodiacSign = zodiacSigns[8];
                 } else {
@@ -92,7 +88,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case 'Октябрь': {
+            case '10': {
                 if (day < 23) {
                     zodiacSign = zodiacSigns[9];
                 } else {
@@ -101,7 +97,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case 'Ноябрь': {
+            case '11': {
                 if (day < 22) {
                     zodiacSign = zodiacSigns[10];
                 } else {
@@ -110,16 +106,14 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case 'Декабрь': {
+            case '12': {
                 if (day < 22) {
                     zodiacSign = zodiacSigns[11];
                 } else {
-                    zodiacSign = zodiacSigns[12];
+                    zodiacSign = zodiacSigns[0];
                 }
             }
                 break;
         }
         return zodiacSign;
-        // или console.log('Введите правильную дату(1-31) и месяц(Январь, Февраль, и т.д.)');
-    } else {console.log('Введите правильную дату(1-31) и месяц(Январь, Февраль, и т.д.)');}
 }
