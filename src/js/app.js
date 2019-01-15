@@ -1,7 +1,7 @@
 import {calculateZodiacSign} from "./lib.js";
 
-const dayOfBirthEl = document.getElementById('dayOfBirth');
-const monthOfBirthEl = document.getElementById('monthOfBirth');
+const dayOfBirthEl = document.getElementById('day-of-birth');
+const monthOfBirthEl = document.getElementById('month-of-birth');
 const calculateEl = document.getElementById('calculate');
 const resultEl = document.getElementById('result');
 
