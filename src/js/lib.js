@@ -5,7 +5,7 @@ export function calculateZodiacSign(day, month) {
         'Стрелец'];
 
         switch (month) {
-            case '1': {
+            case 1: {
                 if (day < 21) {
                     zodiacSign = zodiacSigns[0];
                 } else {
@@ -14,7 +14,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case '2': {
+            case 2: {
                 if (day < 19) {
                     zodiacSign = zodiacSigns[1];
                 } else {
@@ -23,7 +23,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case '3': {
+            case 3: {
                 if (day < 21) {
                     zodiacSign = zodiacSigns[2];
                 } else {
@@ -32,7 +32,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case '4': {
+            case 4: {
                 if (day < 20) {
                     zodiacSign = zodiacSigns[3];
                 } else {
@@ -41,7 +41,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case '5': {
+            case 5: {
                 if (day < 21) {
                     zodiacSign = zodiacSigns[4];
                 } else {
@@ -50,7 +50,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case '6': {
+            case 6: {
                 if (day < 21) {
                     zodiacSign = zodiacSigns[5];
                 } else {
@@ -59,7 +59,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case '7': {
+            case 7: {
                 if (day < 23) {
                     zodiacSign = zodiacSigns[6];
                 } else {
@@ -68,7 +68,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case '8': {
+            case 8: {
                 if (day < 23) {
                     zodiacSign = zodiacSigns[7];
                 } else {
@@ -77,7 +77,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case '9': {
+            case 9: {
                 if (day < 23) {
                     zodiacSign = zodiacSigns[8];
                 } else {
@@ -86,7 +86,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case '10': {
+            case 10: {
                 if (day < 23) {
                     zodiacSign = zodiacSigns[9];
                 } else {
@@ -95,7 +95,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case '11': {
+            case 11: {
                 if (day < 22) {
                     zodiacSign = zodiacSigns[10];
                 } else {
@@ -104,7 +104,7 @@ export function calculateZodiacSign(day, month) {
             }
                 break;
 
-            case '12': {
+            case 12: {
                 if (day < 22) {
                     zodiacSign = zodiacSigns[11];
                 } else {
