@@ -6,9 +6,10 @@ const calculateEl = document.getElementById('calculate');
 const resultEl = document.getElementById('result');
 
 function reactToClick() {
-    const dayOfBirth = parseInt(dayOfBirthEl.value);
+    const dayOfBirth = dayOfBirthEl.value;
     const monthOfBirth = monthOfBirthEl.value;
+    if (dayOfBirth <= 31 && monthOfBirth <= 12) {
     resultEl.textContent = calculateZodiacSign(dayOfBirth, monthOfBirth);
-}
+}}
 
 calculateEl.addEventListener('click', reactToClick);
