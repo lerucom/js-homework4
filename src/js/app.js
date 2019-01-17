@@ -7,7 +7,7 @@ const resultEl = document.getElementById('result');
 
 function reactToClick() {
     const dayOfBirth = parseInt(dayOfBirthEl.value);
-    const monthOfBirth = monthOfBirthEl.value;
+    const monthOfBirth = parseInt(monthOfBirthEl.value);
     resultEl.textContent = calculateZodiacSign(dayOfBirth, monthOfBirth);
 }
 
