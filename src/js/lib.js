@@ -4,7 +4,7 @@ export function calculateZodiacSign(day, month) {
         'Телец', 'Близнецы', 'Рак', 'Лев', 'Дева', 'Весы', 'Скорпион',
         'Стрелец'];
 
-        switch (month) {
+        switch (parseInt(month)) {
             case 1: {
                 if (day < 21) {
                     zodiacSign = zodiacSigns[0];
